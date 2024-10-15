@@ -9,4 +9,7 @@ Tools for computing mfg costs and materials.
 Currently:  
 1.  Can accurately compute a `build of materials` or BOM for recipe (aka basic standard frame s and its dependencies).  
 
+## Status
+Ideation -- limited updates at this time -- this project is created to explore the idea.  
 
+2024.10.15
