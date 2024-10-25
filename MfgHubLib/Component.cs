@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace MfgHubLib;
  
@@ -11,6 +12,10 @@ namespace MfgHubLib;
 public class Component : IComponent, IEquatable<Component>
 {
     public string Name { get; set; } = "";
+    /// <summary>
+    /// ACK!  This breaks the whole IComponent, factory stuff
+    /// </summary>
+    [JsonConverter(typeof(IngredientsJsonTypeConverter))]
     public Dictionary<IComponent, double> Ingredients { get; set; } = new();
     public bool IsCrafted { get; set; } = true;
     public double BatchSize { get; set; } = 0;

@@ -1,5 +1,8 @@
 namespace MfgHubLib;
 
+/// <summary>
+/// used by order as the data for computing materials needed to complete an order 
+/// </summary>
 public class BuildOfMaterial
 {
     public Component Component { get; set; } = null;
